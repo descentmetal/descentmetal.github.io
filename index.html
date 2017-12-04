@@ -55,7 +55,7 @@
         }
         var map = L.map('map', {
             zoomControl:true, maxZoom:26, minZoom:1
-        }).fitBounds([[37.1244555436,-111.660001859],[37.9453201437,-109.403839578]]);
+        }).fitBounds([[37.2316399981,-111.677496166],[38.0513298231,-109.421333884]]);
         var hash = new L.Hash(map);
         map.attributionControl.addAttribution('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a>');
         var bounds_group = new L.featureGroup([]);
@@ -202,9 +202,6 @@
                         <td colspan="2">' + (feature.properties['Name'] !== null ? Autolinker.link(String(feature.properties['Name'])) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['Image'] !== null ? '<img src="images/' + String(feature.properties['Image']).replace(/[\\/:]/g, '_').trim() + '">' : '') + '</td>\
-                    </tr>\
-                    <tr>\
                         <td colspan="2">' + (feature.properties['Desc'] !== null ? Autolinker.link(String(feature.properties['Desc'])) : '') + '</td>\
                     </tr>\
                 </table>';
@@ -254,9 +251,6 @@
             var popupContent = '<table>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['Name'] !== null ? Autolinker.link(String(feature.properties['Name'])) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Image'] !== null ? '<img src="images/' + String(feature.properties['Image']).replace(/[\\/:]/g, '_').trim() + '">' : '') + '</td>\
                     </tr>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['Desc'] !== null ? Autolinker.link(String(feature.properties['Desc'])) : '') + '</td>\
@@ -310,9 +304,6 @@
                         <td colspan="2">' + (feature.properties['Name'] !== null ? Autolinker.link(String(feature.properties['Name'])) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['Image'] !== null ? '<img src="images/' + String(feature.properties['Image']).replace(/[\\/:]/g, '_').trim() + '">' : '') + '</td>\
-                    </tr>\
-                    <tr>\
                         <td colspan="2">' + (feature.properties['Desc'] !== null ? Autolinker.link(String(feature.properties['Desc'])) : '') + '</td>\
                     </tr>\
                 </table>';
@@ -362,9 +353,6 @@
             var popupContent = '<table>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['Name'] !== null ? Autolinker.link(String(feature.properties['Name'])) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Image'] !== null ? '<img src="images/' + String(feature.properties['Image']).replace(/[\\/:]/g, '_').trim() + '">' : '') + '</td>\
                     </tr>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['Desc'] !== null ? Autolinker.link(String(feature.properties['Desc'])) : '') + '</td>\
